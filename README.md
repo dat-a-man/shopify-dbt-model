@@ -86,6 +86,7 @@ dbt_<pipeline-name>/
 ├── tests/
 ├── dbt_project.yml
 └── requirements.txt
+```
 
 ### Step 3: Run dbt
 Execute the dbt models to transform the raw Shopify data into useful tables:
