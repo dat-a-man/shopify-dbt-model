@@ -5,6 +5,7 @@ import dlt
 from dlt.common import pendulum
 from typing import List, Tuple
 from shopify_dlt import shopify_source, TAnyDateTime, shopify_partner_query
+from dlt_plus.dbt_generator.utils import table_reference_adapter
 
 
 def load_all_resources(resources: List[str], start_date: TAnyDateTime) -> None:
@@ -12,12 +13,115 @@ def load_all_resources(resources: List[str], start_date: TAnyDateTime) -> None:
     Subsequent runs will load only items updated since the previous run.
     """
 
-    pipeline = dlt.pipeline(
-        pipeline_name="shopify_tst", destination='bigquery', dataset_name="shopify_data_tst"
+    p = dlt.pipeline(
+        pipeline_name="shopify_tst45", destination='bigquery', dataset_name="shopify_data_tst45"
     )
-    load_info = pipeline.run(
+    load_info = p.run(
         shopify_source(start_date=start_date).with_resources(*resources),
     )
+    # Define relationships for customers__addresses
+    # Table: customers__addresses
+    table_reference_adapter(
+        p,
+        "customers__addresses",
+        references=[
+            {
+                "referenced_table": "customers",
+                "columns": ["customer_id"],
+                "referenced_columns": ["id"],
+            }
+        ],
+    )
+
+    # Table: orders__fulfillments__line_items
+    table_reference_adapter(
+        p,
+        "orders__fulfillments__line_items",
+        references=[
+            {
+                "referenced_table": "products",
+                "columns": ["product_id"],
+                "referenced_columns": ["id"],
+            },
+            {
+                "referenced_table": "products__variants",
+                "columns": ["variant_id"],
+                "referenced_columns": ["id"],
+            },
+        ],
+    )
+
+    # Table: orders__fulfillments
+    table_reference_adapter(
+        p,
+        "orders__fulfillments",
+        references=[
+            {
+                "referenced_table": "orders",
+                "columns": ["order_id"],
+                "referenced_columns": ["id"],
+            }
+        ],
+    )
+
+    # Table: orders__line_items
+    table_reference_adapter(
+        p,
+        "orders__line_items",
+        references=[
+            {
+                "referenced_table": "products",
+                "columns": ["product_id"],
+                "referenced_columns": ["id"],
+            },
+            {
+                "referenced_table": "products__variants",
+                "columns": ["variant_id"],
+                "referenced_columns": ["id"],
+            },
+        ],
+    )
+
+    # Table: products__images
+    table_reference_adapter(
+        p,
+        "products__images",
+        references=[
+            {
+                "referenced_table": "products",
+                "columns": ["product_id"],
+                "referenced_columns": ["id"],
+            }
+        ],
+    )
+
+    # Table: products__options
+    table_reference_adapter(
+        p,
+        "products__options",
+        references=[
+            {
+                "referenced_table": "products",
+                "columns": ["product_id"],
+                "referenced_columns": ["id"],
+            }
+        ],
+    )
+
+    # Table: products__variants
+    table_reference_adapter(
+        p,
+        "products__variants",
+        references=[
+            {
+                "referenced_table": "products",
+                "columns": ["product_id"],
+                "referenced_columns": ["id"],
+            }
+        ],
+    )
+
+
     print(load_info)
 
 

@@ -1,0 +1,1107 @@
+
+
+============================== 07:59:18.199991 | 8490355b-5f37-437b-98cf-76a7c1c056c7 ==============================
+[0m07:59:18.199991 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:59:18.202655 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'log_path': '/workspaces/shopify-dbt-model/dbt_shopify_tst1/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m07:59:18.203339 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m07:59:18.384128 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m07:59:18.385094 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m07:59:18.387324 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.25565827, "process_user_time": 2.473551, "process_kernel_time": 0.29083, "process_mem_max_rss": "204068", "process_in_blocks": "44016", "process_out_blocks": "8"}
+[0m07:59:18.388505 [debug] [MainThread]: Command `cli deps` succeeded at 07:59:18.388301 after 0.26 seconds
+[0m07:59:18.389201 [debug] [MainThread]: Flushing usage events
+
+
+============================== 07:59:20.857780 | 32d4df54-ecbb-4f26-ab5a-08d73e572f9d ==============================
+[0m07:59:20.857780 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:59:20.860122 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/workspaces/shopify-dbt-model/dbt_shopify_tst1/logs', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'False'}
+[0m07:59:20.860747 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m07:59:21.517851 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m07:59:21.544001 [debug] [MainThread]: checksum: a047fedcdefb89a53f3a518a4c3392078913ec510ec40429fb8742763b73acd9, vars: {'destination_dataset_name': 'shopify_data_tst2_transformed',
+ 'source_dataset_name': 'shopify_data_tst2'}, profile: bigquery, target: , version: 1.8.7
+[0m07:59:21.545583 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:59:23.061794 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m07:59:23.070207 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name '_dlt_loads' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.091284 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.157319 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.177069 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'customers' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.186548 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'customers__addresses' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.188944 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__payment_gateway_names' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.195365 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.198538 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.208707 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__line_items' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.210331 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__line_items__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.212473 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__receipt__gift_cards' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.214672 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__line_items' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.216250 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__line_items__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.221961 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__variants' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.223778 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__options' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.225195 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__options__values' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.228120 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__images' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.229621 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__images__variant_ids' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.231069 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__image__variant_ids' in the 'models' section of file 'models/sources.yml'
+[0m07:59:23.820431 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.shopify_tst1.fact_orders__line_items' (models/marts/fact_orders__line_items.sql) depends on a node named 'dim_orders' which was not found
+[0m07:59:23.821938 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 3.0327625, "process_user_time": 4.718552, "process_kernel_time": 0.318539, "process_mem_max_rss": "245120", "process_in_blocks": "1544", "process_out_blocks": "8", "command_success": false}
+[0m07:59:23.822666 [debug] [MainThread]: Command `cli seed` failed at 07:59:23.822547 after 3.03 seconds
+[0m07:59:23.823226 [debug] [MainThread]: Flushing usage events
+
+
+============================== 08:07:17.174979 | 44a565ee-3e8a-4afc-af1a-43e34bef6fd2 ==============================
+[0m08:07:17.174979 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:07:17.177562 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/workspaces/shopify-dbt-model/dbt_shopify_tst1/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt ', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m08:07:17.178254 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m08:07:17.322892 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:07:17.323999 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:07:17.325340 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.22257887, "process_user_time": 2.3381, "process_kernel_time": 0.227523, "process_mem_max_rss": "206276", "process_in_blocks": "136", "process_out_blocks": "16"}
+[0m08:07:17.326089 [debug] [MainThread]: Command `cli deps` succeeded at 08:07:17.325969 after 0.22 seconds
+[0m08:07:17.326602 [debug] [MainThread]: Flushing usage events
+
+
+============================== 08:07:19.969630 | 29cd8b7c-5b8d-44b0-a54c-352267bafd1a ==============================
+[0m08:07:19.969630 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:07:19.972164 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/workspaces/shopify-dbt-model/dbt_shopify_tst1/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m08:07:19.972777 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m08:07:20.639228 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m08:07:20.653038 [debug] [MainThread]: checksum: a047fedcdefb89a53f3a518a4c3392078913ec510ec40429fb8742763b73acd9, vars: {'destination_dataset_name': 'shopify_data_tst2_transformed',
+ 'source_dataset_name': 'shopify_data_tst2'}, profile: bigquery, target: , version: 1.8.7
+[0m08:07:20.654461 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:07:21.966592 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m08:07:21.971804 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name '_dlt_loads' in the 'models' section of file 'models/sources.yml'
+[0m08:07:21.983408 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.053833 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.076793 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'customers' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.089555 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'customers__addresses' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.092345 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__payment_gateway_names' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.098931 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.103237 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.118224 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__line_items' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.120831 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__line_items__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.124323 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__receipt__gift_cards' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.127988 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__line_items' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.130408 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__line_items__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.141107 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__variants' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.143665 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__options' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.145951 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__options__values' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.153272 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__images' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.157665 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__images__variant_ids' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.159554 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__image__variant_ids' in the 'models' section of file 'models/sources.yml'
+[0m08:07:22.618605 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.shopify_tst1.fact_orders__line_items' (models/marts/fact_orders__line_items.sql) depends on a node named 'dim_orders' which was not found
+[0m08:07:22.620194 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 2.7156687, "process_user_time": 4.71226, "process_kernel_time": 0.296764, "process_mem_max_rss": "245644", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m08:07:22.620967 [debug] [MainThread]: Command `cli seed` failed at 08:07:22.620838 after 2.72 seconds
+[0m08:07:22.621513 [debug] [MainThread]: Flushing usage events
+
+
+============================== 08:08:36.906719 | 68283521-cc1e-4933-b8e9-fd445cf04961 ==============================
+[0m08:08:36.906719 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:08:36.909053 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/workspaces/shopify-dbt-model/dbt_shopify_tst1/logs', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'True', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m08:08:36.909618 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m08:08:37.055147 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:08:37.056158 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:08:37.057259 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.21406065, "process_user_time": 2.212523, "process_kernel_time": 0.226746, "process_mem_max_rss": "206004", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m08:08:37.058002 [debug] [MainThread]: Command `cli deps` succeeded at 08:08:37.057877 after 0.21 seconds
+[0m08:08:37.058510 [debug] [MainThread]: Flushing usage events
+
+
+============================== 08:08:39.558761 | 43eac8f2-77b4-4623-acfa-bcaa283208b6 ==============================
+[0m08:08:39.558761 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:08:39.562250 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/workspaces/shopify-dbt-model/dbt_shopify_tst1/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m08:08:39.563143 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m08:08:40.175308 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m08:08:40.188687 [debug] [MainThread]: checksum: a047fedcdefb89a53f3a518a4c3392078913ec510ec40429fb8742763b73acd9, vars: {'destination_dataset_name': 'shopify_data_tst2_transformed',
+ 'source_dataset_name': 'shopify_data_tst2'}, profile: bigquery, target: , version: 1.8.7
+[0m08:08:40.190051 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:08:41.522933 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m08:08:41.527956 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name '_dlt_loads' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.537464 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.571646 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.582934 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'customers' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.588327 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'customers__addresses' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.590121 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__payment_gateway_names' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.594199 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.596417 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.605200 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__line_items' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.606762 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__line_items__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.608893 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__receipt__gift_cards' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.611076 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__line_items' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.612631 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__line_items__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.618187 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__variants' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.619637 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__options' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.621027 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__options__values' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.623906 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__images' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.625395 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__images__variant_ids' in the 'models' section of file 'models/sources.yml'
+[0m08:08:41.626756 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__image__variant_ids' in the 'models' section of file 'models/sources.yml'
+[0m08:08:42.072616 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.shopify_tst1.fact_orders__line_items' (models/marts/fact_orders__line_items.sql) depends on a node named 'dim_orders' which was not found
+[0m08:08:42.074030 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 2.5917263, "process_user_time": 4.576711, "process_kernel_time": 0.284919, "process_mem_max_rss": "245256", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m08:08:42.074758 [debug] [MainThread]: Command `cli seed` failed at 08:08:42.074641 after 2.59 seconds
+[0m08:08:42.075319 [debug] [MainThread]: Flushing usage events
+
+
+============================== 08:11:47.268437 | 01f1657e-01c8-4a86-9b6f-927c3ffd1239 ==============================
+[0m08:11:47.268437 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:11:47.272460 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/workspaces/shopify-dbt-model/dbt_shopify_tst1/logs', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt ', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m08:11:47.273443 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m08:11:47.426747 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:11:47.428581 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:11:47.430459 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.26361927, "process_user_time": 2.204529, "process_kernel_time": 0.252457, "process_mem_max_rss": "203684", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m08:11:47.431604 [debug] [MainThread]: Command `cli deps` succeeded at 08:11:47.431437 after 0.26 seconds
+[0m08:11:47.432471 [debug] [MainThread]: Flushing usage events
+
+
+============================== 08:11:49.938567 | 64064031-0fd6-4d91-843e-2ab33f5a79cf ==============================
+[0m08:11:49.938567 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:11:49.940891 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/workspaces/shopify-dbt-model/dbt_shopify_tst1/logs', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m08:11:49.941463 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m08:11:50.551755 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m08:11:50.568747 [debug] [MainThread]: checksum: a047fedcdefb89a53f3a518a4c3392078913ec510ec40429fb8742763b73acd9, vars: {'destination_dataset_name': 'shopify_data_tst2_transformed',
+ 'source_dataset_name': 'shopify_data_tst2'}, profile: bigquery, target: , version: 1.8.7
+[0m08:11:50.570201 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:11:51.878372 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m08:11:51.883370 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name '_dlt_loads' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.893067 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.927819 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.938928 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'customers' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.944308 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'customers__addresses' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.946057 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__payment_gateway_names' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.950109 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.952799 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.961065 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__line_items' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.962624 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__line_items__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.964733 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__fulfillments__receipt__gift_cards' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.966927 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__line_items' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.968488 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'orders__line_items__tax_lines' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.974049 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__variants' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.975502 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__options' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.976889 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__options__values' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.979755 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__images' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.981268 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__images__variant_ids' in the 'models' section of file 'models/sources.yml'
+[0m08:11:51.982633 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'products__image__variant_ids' in the 'models' section of file 'models/sources.yml'
+[0m08:11:52.428465 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null__dlt_loads_load_id.aced3f4300' (models/sources.yml) depends on a node named '_dlt_loads' in package '' which was not found
+[0m08:11:52.429160 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null__dlt_loads_status.231190b63d' (models/sources.yml) depends on a node named '_dlt_loads' in package '' which was not found
+[0m08:11:52.429705 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null__dlt_loads_inserted_at.94eab1945d' (models/sources.yml) depends on a node named '_dlt_loads' in package '' which was not found
+[0m08:11:52.430252 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products_id.dea2ae6732' (models/sources.yml) depends on a node named 'products' in package '' which was not found
+[0m08:11:52.430771 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__dlt_load_id.d840aa47fd' (models/sources.yml) depends on a node named 'products' in package '' which was not found
+[0m08:11:52.431301 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__dlt_id.5141604ee8' (models/sources.yml) depends on a node named 'products' in package '' which was not found
+[0m08:11:52.431826 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_products__dlt_id.6d751d3c3f' (models/sources.yml) depends on a node named 'products' in package '' which was not found
+[0m08:11:52.432346 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders_id.84ef11d8fe' (models/sources.yml) depends on a node named 'orders' in package '' which was not found
+[0m08:11:52.432874 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__dlt_load_id.f04615d578' (models/sources.yml) depends on a node named 'orders' in package '' which was not found
+[0m08:11:52.433395 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__dlt_id.6b264d25f3' (models/sources.yml) depends on a node named 'orders' in package '' which was not found
+[0m08:11:52.433899 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_orders__dlt_id.d07818bee3' (models/sources.yml) depends on a node named 'orders' in package '' which was not found
+[0m08:11:52.434391 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_customers_id.422908bfae' (models/sources.yml) depends on a node named 'customers' in package '' which was not found
+[0m08:11:52.434895 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_customers__dlt_load_id.957af277bf' (models/sources.yml) depends on a node named 'customers' in package '' which was not found
+[0m08:11:52.435388 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_customers__dlt_id.ffdfacb28a' (models/sources.yml) depends on a node named 'customers' in package '' which was not found
+[0m08:11:52.435893 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_customers__dlt_id.98d062188e' (models/sources.yml) depends on a node named 'customers' in package '' which was not found
+[0m08:11:52.436386 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_customers__addresses__dlt_root_id.d24737cfa8' (models/sources.yml) depends on a node named 'customers__addresses' in package '' which was not found
+[0m08:11:52.436896 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_customers__addresses__dlt_parent_id.687c16b734' (models/sources.yml) depends on a node named 'customers__addresses' in package '' which was not found
+[0m08:11:52.437387 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_customers__addresses__dlt_list_idx.5b5cc1a0c7' (models/sources.yml) depends on a node named 'customers__addresses' in package '' which was not found
+[0m08:11:52.437897 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_customers__addresses__dlt_id.8ed03c664a' (models/sources.yml) depends on a node named 'customers__addresses' in package '' which was not found
+[0m08:11:52.438392 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_customers__addresses__dlt_id.8af25adb81' (models/sources.yml) depends on a node named 'customers__addresses' in package '' which was not found
+[0m08:11:52.438898 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__payment_gateway_names__dlt_root_id.00555f24e2' (models/sources.yml) depends on a node named 'orders__payment_gateway_names' in package '' which was not found
+[0m08:11:52.439394 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__payment_gateway_names__dlt_parent_id.74fea8314c' (models/sources.yml) depends on a node named 'orders__payment_gateway_names' in package '' which was not found
+[0m08:11:52.439910 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__payment_gateway_names__dlt_list_idx.5083794dd3' (models/sources.yml) depends on a node named 'orders__payment_gateway_names' in package '' which was not found
+[0m08:11:52.440411 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__payment_gateway_names__dlt_id.da38ba4543' (models/sources.yml) depends on a node named 'orders__payment_gateway_names' in package '' which was not found
+[0m08:11:52.440926 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_orders__payment_gateway_names__dlt_id.d62dc187a9' (models/sources.yml) depends on a node named 'orders__payment_gateway_names' in package '' which was not found
+[0m08:11:52.441426 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__tax_lines__dlt_root_id.19e9c5c3e6' (models/sources.yml) depends on a node named 'orders__tax_lines' in package '' which was not found
+[0m08:11:52.441930 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__tax_lines__dlt_parent_id.147231003f' (models/sources.yml) depends on a node named 'orders__tax_lines' in package '' which was not found
+[0m08:11:52.442427 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__tax_lines__dlt_list_idx.368a19e964' (models/sources.yml) depends on a node named 'orders__tax_lines' in package '' which was not found
+[0m08:11:52.442944 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__tax_lines__dlt_id.db473c25ba' (models/sources.yml) depends on a node named 'orders__tax_lines' in package '' which was not found
+[0m08:11:52.443437 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_orders__tax_lines__dlt_id.ad87cddf0f' (models/sources.yml) depends on a node named 'orders__tax_lines' in package '' which was not found
+[0m08:11:52.443941 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__dlt_root_id.6f8ef2aa81' (models/sources.yml) depends on a node named 'orders__fulfillments' in package '' which was not found
+[0m08:11:52.444437 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__dlt_parent_id.e93b319591' (models/sources.yml) depends on a node named 'orders__fulfillments' in package '' which was not found
+[0m08:11:52.444949 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__dlt_list_idx.708d0006b6' (models/sources.yml) depends on a node named 'orders__fulfillments' in package '' which was not found
+[0m08:11:52.445438 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__dlt_id.b5a7525a97' (models/sources.yml) depends on a node named 'orders__fulfillments' in package '' which was not found
+[0m08:11:52.445943 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_orders__fulfillments__dlt_id.b65e2dfe77' (models/sources.yml) depends on a node named 'orders__fulfillments' in package '' which was not found
+[0m08:11:52.446435 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__line_items__dlt_root_id.12dbad4c59' (models/sources.yml) depends on a node named 'orders__fulfillments__line_items' in package '' which was not found
+[0m08:11:52.446945 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__line_items__dlt_parent_id.a9e0ea3941' (models/sources.yml) depends on a node named 'orders__fulfillments__line_items' in package '' which was not found
+[0m08:11:52.447438 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__line_items__dlt_list_idx.868bc154c6' (models/sources.yml) depends on a node named 'orders__fulfillments__line_items' in package '' which was not found
+[0m08:11:52.447944 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__line_items__dlt_id.ea0c557d78' (models/sources.yml) depends on a node named 'orders__fulfillments__line_items' in package '' which was not found
+[0m08:11:52.448438 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_orders__fulfillments__line_items__dlt_id.ff2a54aa01' (models/sources.yml) depends on a node named 'orders__fulfillments__line_items' in package '' which was not found
+[0m08:11:52.448944 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__line_items__tax_lines__dlt_root_id.6d5ea6f6d0' (models/sources.yml) depends on a node named 'orders__fulfillments__line_items__tax_lines' in package '' which was not found
+[0m08:11:52.449445 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__line_items__tax_lines__dlt_parent_id.b2daaa6dbd' (models/sources.yml) depends on a node named 'orders__fulfillments__line_items__tax_lines' in package '' which was not found
+[0m08:11:52.449960 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__line_items__tax_lines__dlt_list_idx.55b44851a0' (models/sources.yml) depends on a node named 'orders__fulfillments__line_items__tax_lines' in package '' which was not found
+[0m08:11:52.450456 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__line_items__tax_lines__dlt_id.025d75db85' (models/sources.yml) depends on a node named 'orders__fulfillments__line_items__tax_lines' in package '' which was not found
+[0m08:11:52.450969 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_orders__fulfillments__line_items__tax_lines__dlt_id.679382a18a' (models/sources.yml) depends on a node named 'orders__fulfillments__line_items__tax_lines' in package '' which was not found
+[0m08:11:52.451463 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__receipt__gift_cards__dlt_root_id.d3866dd4cd' (models/sources.yml) depends on a node named 'orders__fulfillments__receipt__gift_cards' in package '' which was not found
+[0m08:11:52.451977 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__receipt__gift_cards__dlt_parent_id.f71b576ac2' (models/sources.yml) depends on a node named 'orders__fulfillments__receipt__gift_cards' in package '' which was not found
+[0m08:11:52.452466 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__receipt__gift_cards__dlt_list_idx.16e90dba5f' (models/sources.yml) depends on a node named 'orders__fulfillments__receipt__gift_cards' in package '' which was not found
+[0m08:11:52.452984 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__fulfillments__receipt__gift_cards__dlt_id.fce222f83d' (models/sources.yml) depends on a node named 'orders__fulfillments__receipt__gift_cards' in package '' which was not found
+[0m08:11:52.453475 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_orders__fulfillments__receipt__gift_cards__dlt_id.b51db75baf' (models/sources.yml) depends on a node named 'orders__fulfillments__receipt__gift_cards' in package '' which was not found
+[0m08:11:52.453987 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__line_items__dlt_root_id.6741755648' (models/sources.yml) depends on a node named 'orders__line_items' in package '' which was not found
+[0m08:11:52.454477 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__line_items__dlt_parent_id.26b555d572' (models/sources.yml) depends on a node named 'orders__line_items' in package '' which was not found
+[0m08:11:52.454993 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__line_items__dlt_list_idx.5df18d68bd' (models/sources.yml) depends on a node named 'orders__line_items' in package '' which was not found
+[0m08:11:52.455482 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__line_items__dlt_id.18e9c42e16' (models/sources.yml) depends on a node named 'orders__line_items' in package '' which was not found
+[0m08:11:52.455991 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_orders__line_items__dlt_id.4130c88943' (models/sources.yml) depends on a node named 'orders__line_items' in package '' which was not found
+[0m08:11:52.456480 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__line_items__tax_lines__dlt_root_id.315cd41ece' (models/sources.yml) depends on a node named 'orders__line_items__tax_lines' in package '' which was not found
+[0m08:11:52.456998 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__line_items__tax_lines__dlt_parent_id.5aab4fba29' (models/sources.yml) depends on a node named 'orders__line_items__tax_lines' in package '' which was not found
+[0m08:11:52.457499 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__line_items__tax_lines__dlt_list_idx.cec26cf44f' (models/sources.yml) depends on a node named 'orders__line_items__tax_lines' in package '' which was not found
+[0m08:11:52.458012 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_orders__line_items__tax_lines__dlt_id.71e23fb471' (models/sources.yml) depends on a node named 'orders__line_items__tax_lines' in package '' which was not found
+[0m08:11:52.458504 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_orders__line_items__tax_lines__dlt_id.19e80e8d5d' (models/sources.yml) depends on a node named 'orders__line_items__tax_lines' in package '' which was not found
+[0m08:11:52.459015 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_products__variants_id.71d2d6a46c' (models/sources.yml) depends on a node named 'products__variants' in package '' which was not found
+[0m08:11:52.459509 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__variants__dlt_root_id.534f97831b' (models/sources.yml) depends on a node named 'products__variants' in package '' which was not found
+[0m08:11:52.460017 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__variants__dlt_parent_id.8e97bf60a6' (models/sources.yml) depends on a node named 'products__variants' in package '' which was not found
+[0m08:11:52.460505 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__variants__dlt_list_idx.ec690e5d10' (models/sources.yml) depends on a node named 'products__variants' in package '' which was not found
+[0m08:11:52.461014 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__variants__dlt_id.e10c5ac4d8' (models/sources.yml) depends on a node named 'products__variants' in package '' which was not found
+[0m08:11:52.461499 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_products__variants__dlt_id.e1f92b28f5' (models/sources.yml) depends on a node named 'products__variants' in package '' which was not found
+[0m08:11:52.462059 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__options__dlt_root_id.f0ef6765dd' (models/sources.yml) depends on a node named 'products__options' in package '' which was not found
+[0m08:11:52.462552 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__options__dlt_parent_id.79185cd13b' (models/sources.yml) depends on a node named 'products__options' in package '' which was not found
+[0m08:11:52.463077 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__options__dlt_list_idx.1d8df2ce08' (models/sources.yml) depends on a node named 'products__options' in package '' which was not found
+[0m08:11:52.463561 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__options__dlt_id.d928607cc8' (models/sources.yml) depends on a node named 'products__options' in package '' which was not found
+[0m08:11:52.464085 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_products__options__dlt_id.da2acaebf3' (models/sources.yml) depends on a node named 'products__options' in package '' which was not found
+[0m08:11:52.464597 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__options__values__dlt_root_id.a65043547d' (models/sources.yml) depends on a node named 'products__options__values' in package '' which was not found
+[0m08:11:52.465119 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__options__values__dlt_parent_id.e8f1e8e58c' (models/sources.yml) depends on a node named 'products__options__values' in package '' which was not found
+[0m08:11:52.465617 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__options__values__dlt_list_idx.790811e2f1' (models/sources.yml) depends on a node named 'products__options__values' in package '' which was not found
+[0m08:11:52.466128 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__options__values__dlt_id.4f7bf59a38' (models/sources.yml) depends on a node named 'products__options__values' in package '' which was not found
+[0m08:11:52.466617 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_products__options__values__dlt_id.e7e4d9b65c' (models/sources.yml) depends on a node named 'products__options__values' in package '' which was not found
+[0m08:11:52.467128 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__images__dlt_root_id.165fdb5400' (models/sources.yml) depends on a node named 'products__images' in package '' which was not found
+[0m08:11:52.467651 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__images__dlt_parent_id.c3bb9e9794' (models/sources.yml) depends on a node named 'products__images' in package '' which was not found
+[0m08:11:52.468160 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__images__dlt_list_idx.27fcb748a7' (models/sources.yml) depends on a node named 'products__images' in package '' which was not found
+[0m08:11:52.468650 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__images__dlt_id.e5c84e6f3b' (models/sources.yml) depends on a node named 'products__images' in package '' which was not found
+[0m08:11:52.469160 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_products__images__dlt_id.af9031088e' (models/sources.yml) depends on a node named 'products__images' in package '' which was not found
+[0m08:11:52.469650 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__images__variant_ids__dlt_root_id.1cca197c73' (models/sources.yml) depends on a node named 'products__images__variant_ids' in package '' which was not found
+[0m08:11:52.470165 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__images__variant_ids__dlt_parent_id.fa64d3790d' (models/sources.yml) depends on a node named 'products__images__variant_ids' in package '' which was not found
+[0m08:11:52.470655 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__images__variant_ids__dlt_list_idx.bf2b2df478' (models/sources.yml) depends on a node named 'products__images__variant_ids' in package '' which was not found
+[0m08:11:52.471169 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__images__variant_ids__dlt_id.3e77953e93' (models/sources.yml) depends on a node named 'products__images__variant_ids' in package '' which was not found
+[0m08:11:52.471661 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_products__images__variant_ids__dlt_id.5e225fbad7' (models/sources.yml) depends on a node named 'products__images__variant_ids' in package '' which was not found
+[0m08:11:52.472176 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__image__variant_ids__dlt_root_id.461d842ee9' (models/sources.yml) depends on a node named 'products__image__variant_ids' in package '' which was not found
+[0m08:11:52.472670 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__image__variant_ids__dlt_parent_id.4499427d03' (models/sources.yml) depends on a node named 'products__image__variant_ids' in package '' which was not found
+[0m08:11:52.473186 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__image__variant_ids__dlt_list_idx.6cd1f0191e' (models/sources.yml) depends on a node named 'products__image__variant_ids' in package '' which was not found
+[0m08:11:52.473682 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.not_null_products__image__variant_ids__dlt_id.ca325d7505' (models/sources.yml) depends on a node named 'products__image__variant_ids' in package '' which was not found
+[0m08:11:52.474192 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.shopify_tst1.unique_products__image__variant_ids__dlt_id.cf1d84ac4b' (models/sources.yml) depends on a node named 'products__image__variant_ids' in package '' which was not found
+[0m08:11:52.817994 [info ] [MainThread]: Found 40 models, 20 sources, 479 macros
+[0m08:11:52.820776 [info ] [MainThread]: 
+[0m08:11:52.821291 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m08:11:52.821995 [debug] [MainThread]: Command end result
+[0m08:11:52.874695 [info ] [MainThread]: 
+[0m08:11:52.875580 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:11:52.876312 [info ] [MainThread]: 
+[0m08:11:52.877071 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+[0m08:11:52.878503 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 3.004572, "process_user_time": 4.934985, "process_kernel_time": 0.326866, "process_mem_max_rss": "247572", "process_in_blocks": "40", "process_out_blocks": "5376"}
+[0m08:11:52.879528 [debug] [MainThread]: Command `cli seed` succeeded at 08:11:52.879378 after 3.01 seconds
+[0m08:11:52.880336 [debug] [MainThread]: Flushing usage events
+
+
+============================== 08:11:55.494219 | 6729bf16-0a7c-41ee-a0b6-bfd5a0b076d9 ==============================
+[0m08:11:55.494219 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:11:55.496553 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/workspaces/shopify-dbt-model/dbt_shopify_tst1/logs', 'fail_fast': 'True', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'True', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt ', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m08:11:55.497152 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m08:11:56.226677 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m08:11:56.240146 [debug] [MainThread]: checksum: a047fedcdefb89a53f3a518a4c3392078913ec510ec40429fb8742763b73acd9, vars: {'destination_dataset_name': 'shopify_data_tst2_transformed',
+ 'source_dataset_name': 'shopify_data_tst2'}, profile: bigquery, target: , version: 1.8.7
+[0m08:11:56.380802 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:11:56.381476 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:11:56.551912 [info ] [MainThread]: Found 40 models, 20 sources, 479 macros
+[0m08:11:56.555467 [info ] [MainThread]: 
+[0m08:11:56.556195 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:11:56.563138 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dlt-dev-external'
+[0m08:11:56.563754 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:11:57.709548 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dlt-dev-external, now create_dlt-dev-external_shopify_data_tst2_transformed)
+[0m08:11:57.710387 [debug] [ThreadPool]: Creating schema "database: "dlt-dev-external"
+schema: "shopify_data_tst2_transformed"
+"
+[0m08:11:57.721925 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:11:57.723424 [debug] [ThreadPool]: On create_dlt-dev-external_shopify_data_tst2_transformed: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "connection_name": "create_dlt-dev-external_shopify_data_tst2_transformed"} */
+create schema if not exists `dlt-dev-external`.`shopify_data_tst2_transformed`
+  
+[0m08:11:58.570025 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:9760fd74-a131-466b-9847-5d4aa07193da&page=queryresults
+[0m08:11:59.880218 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dlt-dev-external_shopify_data_tst2_transformed, now list_dlt-dev-external_shopify_data_tst2_transformed)
+[0m08:11:59.880927 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:12:00.537099 [info ] [MainThread]: Concurrency: 4 threads (target='analytics')
+[0m08:12:00.537678 [info ] [MainThread]: 
+[0m08:12:00.539725 [debug] [Thread-1 (]: Began running node model.shopify_tst1.dlt_active_load_ids
+[0m08:12:00.540454 [info ] [Thread-1 (]: 1 of 40 START sql table model shopify_data_tst2_transformed.dlt_active_load_ids  [RUN]
+[0m08:12:00.541082 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dlt-dev-external_shopify_data_tst2_transformed, now model.shopify_tst1.dlt_active_load_ids)
+[0m08:12:00.541631 [debug] [Thread-1 (]: Began compiling node model.shopify_tst1.dlt_active_load_ids
+[0m08:12:00.550472 [debug] [Thread-1 (]: Writing injected SQL for node "model.shopify_tst1.dlt_active_load_ids"
+[0m08:12:00.551415 [debug] [Thread-1 (]: Began executing node model.shopify_tst1.dlt_active_load_ids
+[0m08:12:00.586204 [debug] [Thread-1 (]: Writing runtime sql for node "model.shopify_tst1.dlt_active_load_ids"
+[0m08:12:00.587177 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:12:00.589671 [debug] [Thread-1 (]: On model.shopify_tst1.dlt_active_load_ids: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.shopify_tst1.dlt_active_load_ids"} */
+
+  
+    
+
+    create or replace table `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_active_load_ids`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* check if the destination already has a list of processed ids
+if not we will process all loads with status 0 (==success) */
+
+
+SELECT load_id FROM `dlt-dev-external`.`shopify_data_tst2`.`_dlt_loads`
+WHERE status = 0
+/* exclude already processed load_ids */
+
+    );
+  
+[0m08:12:01.480665 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:491c8709-572b-4408-9ba8-cd80e3604866&page=queryresults
+[0m08:12:07.339234 [info ] [Thread-1 (]: 1 of 40 OK created sql table model shopify_data_tst2_transformed.dlt_active_load_ids  [[32mCREATE TABLE (1.0 rows, 28.0 Bytes processed)[0m in 6.80s]
+[0m08:12:07.340182 [debug] [Thread-1 (]: Finished running node model.shopify_tst1.dlt_active_load_ids
+[0m08:12:07.341344 [debug] [Thread-3 (]: Began running node model.shopify_tst1.dlt_processed_load_ids
+[0m08:12:07.341996 [debug] [Thread-4 (]: Began running node model.shopify_tst1.stg__dlt_loads
+[0m08:12:07.342704 [info ] [Thread-3 (]: 2 of 40 START sql incremental model shopify_data_tst2_transformed.dlt_processed_load_ids  [RUN]
+[0m08:12:07.343349 [debug] [Thread-2 (]: Began running node model.shopify_tst1.stg_customers
+[0m08:12:07.343921 [debug] [Thread-1 (]: Began running node model.shopify_tst1.stg_orders
+[0m08:12:07.344580 [info ] [Thread-4 (]: 3 of 40 START sql table model shopify_data_tst2_transformed.stg__dlt_loads ..... [RUN]
+[0m08:12:07.345302 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.shopify_tst1.dlt_processed_load_ids'
+[0m08:12:07.345987 [info ] [Thread-2 (]: 4 of 40 START sql table model shopify_data_tst2_transformed.stg_customers ...... [RUN]
+[0m08:12:07.346643 [info ] [Thread-1 (]: 5 of 40 START sql table model shopify_data_tst2_transformed.stg_orders ......... [RUN]
+[0m08:12:07.347348 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.shopify_tst1.stg__dlt_loads'
+[0m08:12:07.347944 [debug] [Thread-3 (]: Began compiling node model.shopify_tst1.dlt_processed_load_ids
+[0m08:12:07.348604 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.shopify_tst1.stg_customers'
+[0m08:12:07.349242 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shopify_tst1.dlt_active_load_ids, now model.shopify_tst1.stg_orders)
+[0m08:12:07.349861 [debug] [Thread-4 (]: Began compiling node model.shopify_tst1.stg__dlt_loads
+[0m08:12:07.354869 [debug] [Thread-3 (]: Writing injected SQL for node "model.shopify_tst1.dlt_processed_load_ids"
+[0m08:12:07.355478 [debug] [Thread-2 (]: Began compiling node model.shopify_tst1.stg_customers
+[0m08:12:07.356089 [debug] [Thread-1 (]: Began compiling node model.shopify_tst1.stg_orders
+[0m08:12:07.359278 [debug] [Thread-4 (]: Writing injected SQL for node "model.shopify_tst1.stg__dlt_loads"
+[0m08:12:07.360076 [debug] [Thread-3 (]: Began executing node model.shopify_tst1.dlt_processed_load_ids
+[0m08:12:07.363495 [debug] [Thread-2 (]: Writing injected SQL for node "model.shopify_tst1.stg_customers"
+[0m08:12:07.374271 [debug] [Thread-1 (]: Writing injected SQL for node "model.shopify_tst1.stg_orders"
+[0m08:12:07.385474 [debug] [Thread-2 (]: Began executing node model.shopify_tst1.stg_customers
+[0m08:12:07.391787 [debug] [Thread-4 (]: Began executing node model.shopify_tst1.stg__dlt_loads
+[0m08:12:07.402478 [debug] [Thread-1 (]: Began executing node model.shopify_tst1.stg_orders
+[0m08:12:07.405186 [debug] [Thread-2 (]: Writing runtime sql for node "model.shopify_tst1.stg_customers"
+[0m08:12:07.414694 [debug] [Thread-3 (]: Writing runtime sql for node "model.shopify_tst1.dlt_processed_load_ids"
+[0m08:12:07.421418 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m08:12:07.420363 [debug] [Thread-1 (]: Writing runtime sql for node "model.shopify_tst1.stg_orders"
+[0m08:12:07.417702 [debug] [Thread-4 (]: Writing runtime sql for node "model.shopify_tst1.stg__dlt_loads"
+[0m08:12:07.423221 [debug] [Thread-2 (]: On model.shopify_tst1.stg_customers: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.shopify_tst1.stg_customers"} */
+
+  
+    
+
+    create or replace table `dlt-dev-external`.`shopify_data_tst2_transformed`.`stg_customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: customers */
+
+
+-- depends_on: `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table 'customers' */
+    id,
+    email,
+    created_at,
+    updated_at,
+    first_name,
+    last_name,
+    orders_count,
+    state,
+    total_spent,
+    verified_email,
+    tax_exempt,
+    tags,
+    currency,
+    phone,
+    accepts_marketing,
+    marketing_opt_in_level,
+    email_marketing_consent__state,
+    email_marketing_consent__opt_in_level,
+    sms_marketing_consent__state,
+    sms_marketing_consent__opt_in_level,
+    sms_marketing_consent__consent_collected_from,
+    admin_graphql_api_id,
+    _dlt_load_id,
+    _dlt_id,
+    note,
+    default_address__id,
+    default_address__customer_id,
+    default_address__first_name,
+    default_address__last_name,
+    default_address__company,
+    default_address__address1,
+    default_address__city,
+    default_address__country,
+    default_address__zip,
+    default_address__name,
+    default_address__country_code,
+    default_address__country_name,
+    default_address__default,
+FROM `dlt-dev-external`.`shopify_data_tst2`.`customers`
+
+/* we only load table items of the currently active load ids into the staging table */
+WHERE _dlt_load_id IN ( SELECT load_id FROM  `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_active_load_ids` )
+    );
+  
+[0m08:12:07.423942 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m08:12:07.451096 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m08:12:07.424658 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:12:07.452853 [debug] [Thread-3 (]: On model.shopify_tst1.dlt_processed_load_ids: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.shopify_tst1.dlt_processed_load_ids"} */
+
+  
+    
+
+    create or replace table `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_processed_load_ids`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select load_id, current_timestamp() as inserted_at FROM `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_active_load_ids`
+    );
+  
+[0m08:12:07.454389 [debug] [Thread-4 (]: On model.shopify_tst1.stg__dlt_loads: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.shopify_tst1.stg__dlt_loads"} */
+
+  
+    
+
+    create or replace table `dlt-dev-external`.`shopify_data_tst2_transformed`.`stg__dlt_loads`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: _dlt_loads */
+/* Description: Created by DLT. Tracks completed loads */
+
+
+-- depends_on: `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table '_dlt_loads' */
+    load_id,
+    schema_name,
+    status,
+    inserted_at,
+    schema_version_hash,
+FROM `dlt-dev-external`.`shopify_data_tst2`.`_dlt_loads`
+    );
+  
+[0m08:12:07.455928 [debug] [Thread-1 (]: On model.shopify_tst1.stg_orders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.shopify_tst1.stg_orders"} */
+
+  
+    
+
+    create or replace table `dlt-dev-external`.`shopify_data_tst2_transformed`.`stg_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: orders */
+
+
+-- depends_on: `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table 'orders' */
+    id,
+    admin_graphql_api_id,
+    app_id,
+    browser_ip,
+    buyer_accepts_marketing,
+    checkout_id,
+    checkout_token,
+    client_details__browser_ip,
+    client_details__user_agent,
+    closed_at,
+    confirmation_number,
+    confirmed,
+    created_at,
+    currency,
+    current_subtotal_price,
+    current_subtotal_price_set__shop_money__amount,
+    current_subtotal_price_set__shop_money__currency_code,
+    current_subtotal_price_set__presentment_money__amount,
+    current_subtotal_price_set__presentment_money__currency_code,
+    current_total_discounts,
+    current_total_discounts_set__shop_money__amount,
+    current_total_discounts_set__shop_money__currency_code,
+    current_total_discounts_set__presentment_money__amount,
+    current_total_discounts_set__presentment_money__currency_code,
+    current_total_price,
+    current_total_price_set__shop_money__amount,
+    current_total_price_set__shop_money__currency_code,
+    current_total_price_set__presentment_money__amount,
+    current_total_price_set__presentment_money__currency_code,
+    current_total_tax,
+    current_total_tax_set__shop_money__amount,
+    current_total_tax_set__shop_money__currency_code,
+    current_total_tax_set__presentment_money__amount,
+    current_total_tax_set__presentment_money__currency_code,
+    customer_locale,
+    email,
+    estimated_taxes,
+    financial_status,
+    fulfillment_status,
+    location_id,
+    name,
+    number,
+    order_number,
+    order_status_url,
+    presentment_currency,
+    processed_at,
+    reference,
+    source_identifier,
+    source_name,
+    subtotal_price,
+    subtotal_price_set__shop_money__amount,
+    subtotal_price_set__shop_money__currency_code,
+    subtotal_price_set__presentment_money__amount,
+    subtotal_price_set__presentment_money__currency_code,
+    tags,
+    tax_exempt,
+    taxes_included,
+    test,
+    token,
+    total_discounts,
+    total_discounts_set__shop_money__amount,
+    total_discounts_set__shop_money__currency_code,
+    total_discounts_set__presentment_money__amount,
+    total_discounts_set__presentment_money__currency_code,
+    total_line_items_price,
+    total_line_items_price_set__shop_money__amount,
+    total_line_items_price_set__shop_money__currency_code,
+    total_line_items_price_set__presentment_money__amount,
+    total_line_items_price_set__presentment_money__currency_code,
+    total_outstanding,
+    total_price,
+    total_price_set__shop_money__amount,
+    total_price_set__shop_money__currency_code,
+    total_price_set__presentment_money__amount,
+    total_price_set__presentment_money__currency_code,
+    total_shipping_price_set__shop_money__amount,
+    total_shipping_price_set__shop_money__currency_code,
+    total_shipping_price_set__presentment_money__amount,
+    total_shipping_price_set__presentment_money__currency_code,
+    total_tax,
+    total_tax_set__shop_money__amount,
+    total_tax_set__shop_money__currency_code,
+    total_tax_set__presentment_money__amount,
+    total_tax_set__presentment_money__currency_code,
+    total_tip_received,
+    total_weight,
+    updated_at,
+    user_id,
+    billing_address__first_name,
+    billing_address__address1,
+    billing_address__city,
+    billing_address__zip,
+    billing_address__province,
+    billing_address__country,
+    billing_address__last_name,
+    billing_address__address2,
+    billing_address__latitude,
+    billing_address__longitude,
+    billing_address__name,
+    billing_address__country_code,
+    billing_address__province_code,
+    _dlt_load_id,
+    _dlt_id,
+FROM `dlt-dev-external`.`shopify_data_tst2`.`orders`
+
+/* we only load table items of the currently active load ids into the staging table */
+WHERE _dlt_load_id IN ( SELECT load_id FROM  `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_active_load_ids` )
+    );
+  
+[0m08:12:08.323565 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:c2152f0b-b9cb-4da9-9ebe-d65b0fa5fb65&page=queryresults
+[0m08:12:08.339054 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:e3d21ee5-f4bc-4ad1-a620-3ff830f42bec&page=queryresults
+[0m08:12:08.352844 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:bde4bf49-3916-4a20-8af3-8c01d276d216&page=queryresults
+[0m08:12:08.391297 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:7af34441-762c-4c94-af99-0abc4f18de24&page=queryresults
+[0m08:12:10.601161 [info ] [Thread-4 (]: 3 of 40 OK created sql table model shopify_data_tst2_transformed.stg__dlt_loads  [[32mCREATE TABLE (1.0 rows, 91.0 Bytes processed)[0m in 3.25s]
+[0m08:12:10.602107 [debug] [Thread-4 (]: Finished running node model.shopify_tst1.stg__dlt_loads
+[0m08:12:10.602736 [debug] [Thread-4 (]: Began running node model.shopify_tst1.stg_products
+[0m08:12:10.603591 [info ] [Thread-4 (]: 6 of 40 START sql table model shopify_data_tst2_transformed.stg_products ....... [RUN]
+[0m08:12:10.604220 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.shopify_tst1.stg__dlt_loads, now model.shopify_tst1.stg_products)
+[0m08:12:10.604772 [debug] [Thread-4 (]: Began compiling node model.shopify_tst1.stg_products
+[0m08:12:10.608618 [debug] [Thread-4 (]: Writing injected SQL for node "model.shopify_tst1.stg_products"
+[0m08:12:10.609385 [debug] [Thread-4 (]: Began executing node model.shopify_tst1.stg_products
+[0m08:12:10.612174 [debug] [Thread-4 (]: Writing runtime sql for node "model.shopify_tst1.stg_products"
+[0m08:12:10.612910 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m08:12:10.614435 [debug] [Thread-4 (]: On model.shopify_tst1.stg_products: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.shopify_tst1.stg_products"} */
+
+  
+    
+
+    create or replace table `dlt-dev-external`.`shopify_data_tst2_transformed`.`stg_products`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: products */
+
+
+-- depends_on: `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table 'products' */
+    id,
+    title,
+    vendor,
+    product_type,
+    created_at,
+    handle,
+    updated_at,
+    published_scope,
+    tags,
+    status,
+    admin_graphql_api_id,
+    _dlt_load_id,
+    _dlt_id,
+    image__id,
+    image__alt,
+    image__position,
+    image__product_id,
+    image__created_at,
+    image__updated_at,
+    image__admin_graphql_api_id,
+    image__width,
+    image__height,
+    image__src,
+    published_at,
+    body_html,
+FROM `dlt-dev-external`.`shopify_data_tst2`.`products`
+
+/* we only load table items of the currently active load ids into the staging table */
+WHERE _dlt_load_id IN ( SELECT load_id FROM  `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_active_load_ids` )
+    );
+  
+[0m08:12:10.809923 [info ] [Thread-3 (]: 2 of 40 OK created sql incremental model shopify_data_tst2_transformed.dlt_processed_load_ids  [[32mCREATE TABLE (1.0 rows, 20.0 Bytes processed)[0m in 3.46s]
+[0m08:12:10.810737 [debug] [Thread-3 (]: Finished running node model.shopify_tst1.dlt_processed_load_ids
+[0m08:12:10.811380 [debug] [Thread-3 (]: Began running node model.shopify_tst1.dim__dlt_loads
+[0m08:12:10.812117 [info ] [Thread-3 (]: 7 of 40 START sql incremental model shopify_data_tst2_transformed.dim__dlt_loads  [RUN]
+[0m08:12:10.812715 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.shopify_tst1.dlt_processed_load_ids, now model.shopify_tst1.dim__dlt_loads)
+[0m08:12:10.813298 [debug] [Thread-3 (]: Began compiling node model.shopify_tst1.dim__dlt_loads
+[0m08:12:10.816420 [debug] [Thread-3 (]: Writing injected SQL for node "model.shopify_tst1.dim__dlt_loads"
+[0m08:12:10.817204 [debug] [Thread-3 (]: Began executing node model.shopify_tst1.dim__dlt_loads
+[0m08:12:10.822411 [debug] [Thread-3 (]: Writing runtime sql for node "model.shopify_tst1.dim__dlt_loads"
+[0m08:12:10.823203 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m08:12:10.824678 [debug] [Thread-3 (]: On model.shopify_tst1.dim__dlt_loads: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.shopify_tst1.dim__dlt_loads"} */
+
+  
+    
+
+    create or replace table `dlt-dev-external`.`shopify_data_tst2_transformed`.`dim__dlt_loads`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: _dlt_loads */
+
+/* Description: Created by DLT. Tracks completed loads */
+SELECT
+    t.load_id,
+    t.schema_name,
+    t.status,
+    t.inserted_at,
+    t.schema_version_hash,
+FROM  `dlt-dev-external`.`shopify_data_tst2_transformed`.`stg__dlt_loads` as t
+    );
+  
+[0m08:12:10.852840 [info ] [Thread-2 (]: 4 of 40 OK created sql table model shopify_data_tst2_transformed.stg_customers . [[32mCREATE TABLE (3.0 rows, 1016.0 Bytes processed)[0m in 3.50s]
+[0m08:12:10.853725 [debug] [Thread-2 (]: Finished running node model.shopify_tst1.stg_customers
+[0m08:12:10.854573 [debug] [Thread-2 (]: Began running node model.shopify_tst1.dim_customers
+[0m08:12:10.855351 [info ] [Thread-2 (]: 8 of 40 START sql incremental model shopify_data_tst2_transformed.dim_customers  [RUN]
+[0m08:12:10.856351 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.shopify_tst1.stg_customers, now model.shopify_tst1.dim_customers)
+[0m08:12:10.857126 [debug] [Thread-2 (]: Began compiling node model.shopify_tst1.dim_customers
+[0m08:12:10.860356 [debug] [Thread-2 (]: Writing injected SQL for node "model.shopify_tst1.dim_customers"
+[0m08:12:10.861100 [debug] [Thread-2 (]: Began executing node model.shopify_tst1.dim_customers
+[0m08:12:10.864371 [debug] [Thread-2 (]: Writing runtime sql for node "model.shopify_tst1.dim_customers"
+[0m08:12:10.866892 [info ] [Thread-1 (]: 5 of 40 OK created sql table model shopify_data_tst2_transformed.stg_orders .... [[32mCREATE TABLE (2.0 rows, 2.1 KiB processed)[0m in 3.52s]
+[0m08:12:10.867559 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m08:12:10.868280 [debug] [Thread-1 (]: Finished running node model.shopify_tst1.stg_orders
+[0m08:12:10.869747 [debug] [Thread-2 (]: On model.shopify_tst1.dim_customers: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.shopify_tst1.dim_customers"} */
+
+  
+    
+
+    create or replace table `dlt-dev-external`.`shopify_data_tst2_transformed`.`dim_customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: customers */
+
+SELECT
+    t.id,
+    t.email,
+    t.created_at,
+    t.updated_at,
+    t.first_name,
+    t.last_name,
+    t.orders_count,
+    t.state,
+    t.total_spent,
+    t.verified_email,
+    t.tax_exempt,
+    t.tags,
+    t.currency,
+    t.phone,
+    t.accepts_marketing,
+    t.marketing_opt_in_level,
+    t.email_marketing_consent__state,
+    t.email_marketing_consent__opt_in_level,
+    t.sms_marketing_consent__state,
+    t.sms_marketing_consent__opt_in_level,
+    t.sms_marketing_consent__consent_collected_from,
+    t.admin_graphql_api_id,
+    t._dlt_load_id,
+    t._dlt_id,
+    t.note,
+    t.default_address__id,
+    t.default_address__customer_id,
+    t.default_address__first_name,
+    t.default_address__last_name,
+    t.default_address__company,
+    t.default_address__address1,
+    t.default_address__city,
+    t.default_address__country,
+    t.default_address__zip,
+    t.default_address__name,
+    t.default_address__country_code,
+    t.default_address__country_name,
+    t.default_address__default,
+FROM  `dlt-dev-external`.`shopify_data_tst2_transformed`.`stg_customers` as t
+    );
+  
+[0m08:12:10.870482 [debug] [Thread-1 (]: Began running node model.shopify_tst1.stg_customers__addresses
+[0m08:12:10.897098 [info ] [Thread-1 (]: 9 of 40 START sql table model shopify_data_tst2_transformed.stg_customers__addresses  [RUN]
+[0m08:12:10.897984 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shopify_tst1.stg_orders, now model.shopify_tst1.stg_customers__addresses)
+[0m08:12:10.898536 [debug] [Thread-1 (]: Began compiling node model.shopify_tst1.stg_customers__addresses
+[0m08:12:10.902312 [debug] [Thread-1 (]: Writing injected SQL for node "model.shopify_tst1.stg_customers__addresses"
+[0m08:12:10.903186 [debug] [Thread-1 (]: Began executing node model.shopify_tst1.stg_customers__addresses
+[0m08:12:10.907485 [debug] [Thread-1 (]: Writing runtime sql for node "model.shopify_tst1.stg_customers__addresses"
+[0m08:12:10.908494 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:12:10.910844 [debug] [Thread-1 (]: On model.shopify_tst1.stg_customers__addresses: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.shopify_tst1.stg_customers__addresses"} */
+
+  
+    
+
+    create or replace table `dlt-dev-external`.`shopify_data_tst2_transformed`.`stg_customers__addresses`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: customers__addresses */
+/* Parent: { parent }} */
+
+
+-- depends_on: `dlt-dev-external`.`shopify_data_tst2_transformed`.`dlt_active_load_ids`
+-- depends_on: `dlt-dev-external`.`shopify_data_tst2_transformed`.`stg_customers`
+
+SELECT
+/* select which columns will be available for table 'customers__addresses' */
+    id,
+    customer_id,
+    first_name,
+    last_name,
+    company,
+    address1,
+    city,
+    country,
+    zip,
+    name,
+    country_code,
+    country_name,
+    default,
+    _dlt_root_id,
+    _dlt_parent_id,
+    _dlt_list_idx,
+    _dlt_id,
+FROM `dlt-dev-external`.`shopify_data_tst2`.`customers__addresses`
+
+/* we only load table items if the parent table has the parent item */
+WHERE _dlt_parent_id IN ( SELECT _dlt_id FROM `dlt-dev-external`.`shopify_data_tst2_transformed`.`stg_customers` )
+    );
+  
+[0m08:12:11.499747 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:34e8e1fe-e670-4b0f-a401-57396927ee90&page=queryresults
+[0m08:12:11.548874 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:a65e6289-17d5-4d6d-917b-c200d8b04bc4&page=queryresults
+[0m08:12:11.549647 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got keyword DEFAULT at [34:5]; reason: invalidQuery, location: query, message: Syntax error: Expected ")" but got keyword DEFAULT at [34:5]')
+[0m08:12:11.662736 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:7afadfc7-cdc1-421a-9e07-54bc9a474b8b&page=queryresults
+[0m08:12:11.694053 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:b0138ce0-fb07-474b-b5d7-6e8c21c545eb&page=queryresults
+[0m08:12:12.528589 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:7c71e3aa-cfac-4070-82b8-8be2e0570c96&page=queryresults
+[0m08:12:12.529513 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:7c71e3aa-cfac-4070-82b8-8be2e0570c96&page=queryresults
+[0m08:12:12.534843 [debug] [Thread-1 (]: Database Error in model stg_customers__addresses (models/staging/stg_customers__addresses.sql)
+  Syntax error: Expected ")" but got keyword DEFAULT at [34:5]
+  compiled code at target/run/shopify_tst1/models/staging/stg_customers__addresses.sql
+[0m08:12:12.535783 [error] [Thread-1 (]: 9 of 40 ERROR creating sql table model shopify_data_tst2_transformed.stg_customers__addresses  [[31mERROR[0m in 1.64s]
+[0m08:12:12.536852 [debug] [Thread-1 (]: Finished running node model.shopify_tst1.stg_customers__addresses
+[0m08:12:12.537733 [debug] [Thread-1 (]: Began running node model.shopify_tst1.fact_orders
+[0m08:12:12.539492 [info ] [Thread-1 (]: 10 of 40 START sql incremental model shopify_data_tst2_transformed.fact_orders . [RUN]
+[0m08:12:12.540373 [info ] [MainThread]: [33mThe bigquery adapter does not support query cancellation. Some queries may still be running![0m
+[0m08:12:12.540980 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shopify_tst1.stg_customers__addresses, now model.shopify_tst1.fact_orders)
+[0m08:12:12.541711 [debug] [Thread-1 (]: Began compiling node model.shopify_tst1.fact_orders
+[0m08:12:12.545735 [debug] [Thread-1 (]: Writing injected SQL for node "model.shopify_tst1.fact_orders"
+[0m08:12:12.546497 [debug] [Thread-1 (]: Began executing node model.shopify_tst1.fact_orders
+[0m08:12:12.549789 [debug] [Thread-1 (]: Writing runtime sql for node "model.shopify_tst1.fact_orders"
+[0m08:12:12.550500 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:12:12.552107 [debug] [Thread-1 (]: On model.shopify_tst1.fact_orders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.shopify_tst1.fact_orders"} */
+
+  
+    
+
+    create or replace table `dlt-dev-external`.`shopify_data_tst2_transformed`.`fact_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Fact Table: orders */
+
+
+SELECT
+    ---- main table orders
+    orders.id,
+    orders.admin_graphql_api_id,
+    orders.app_id,
+    orders.browser_ip,
+    orders.buyer_accepts_marketing,
+    orders.checkout_id,
+    orders.checkout_token,
+    orders.client_details__browser_ip,
+    orders.client_details__user_agent,
+    orders.closed_at,
+    orders.confirmation_number,
+    orders.confirmed,
+    orders.created_at,
+    orders.currency,
+    orders.current_subtotal_price,
+    orders.current_subtotal_price_set__shop_money__amount,
+    orders.current_subtotal_price_set__shop_money__currency_code,
+    orders.current_subtotal_price_set__presentment_money__amount,
+    orders.current_subtotal_price_set__presentment_money__currency_code,
+    orders.current_total_discounts,
+    orders.current_total_discounts_set__shop_money__amount,
+    orders.current_total_discounts_set__shop_money__currency_code,
+    orders.current_total_discounts_set__presentment_money__amount,
+    orders.current_total_discounts_set__presentment_money__currency_code,
+    orders.current_total_price,
+    orders.current_total_price_set__shop_money__amount,
+    orders.current_total_price_set__shop_money__currency_code,
+    orders.current_total_price_set__presentment_money__amount,
+    orders.current_total_price_set__presentment_money__currency_code,
+    orders.current_total_tax,
+    orders.current_total_tax_set__shop_money__amount,
+    orders.current_total_tax_set__shop_money__currency_code,
+    orders.current_total_tax_set__presentment_money__amount,
+    orders.current_total_tax_set__presentment_money__currency_code,
+    orders.customer_locale,
+    orders.email,
+    orders.estimated_taxes,
+    orders.financial_status,
+    orders.fulfillment_status,
+    orders.location_id,
+    orders.name,
+    orders.number,
+    orders.order_number,
+    orders.order_status_url,
+    orders.presentment_currency,
+    orders.processed_at,
+    orders.reference,
+    orders.source_identifier,
+    orders.source_name,
+    orders.subtotal_price,
+    orders.subtotal_price_set__shop_money__amount,
+    orders.subtotal_price_set__shop_money__currency_code,
+    orders.subtotal_price_set__presentment_money__amount,
+    orders.subtotal_price_set__presentment_money__currency_code,
+    orders.tags,
+    orders.tax_exempt,
+    orders.taxes_included,
+    orders.test,
+    orders.token,
+    orders.total_discounts,
+    orders.total_discounts_set__shop_money__amount,
+    orders.total_discounts_set__shop_money__currency_code,
+    orders.total_discounts_set__presentment_money__amount,
+    orders.total_discounts_set__presentment_money__currency_code,
+    orders.total_line_items_price,
+    orders.total_line_items_price_set__shop_money__amount,
+    orders.total_line_items_price_set__shop_money__currency_code,
+    orders.total_line_items_price_set__presentment_money__amount,
+    orders.total_line_items_price_set__presentment_money__currency_code,
+    orders.total_outstanding,
+    orders.total_price,
+    orders.total_price_set__shop_money__amount,
+    orders.total_price_set__shop_money__currency_code,
+    orders.total_price_set__presentment_money__amount,
+    orders.total_price_set__presentment_money__currency_code,
+    orders.total_shipping_price_set__shop_money__amount,
+    orders.total_shipping_price_set__shop_money__currency_code,
+    orders.total_shipping_price_set__presentment_money__amount,
+    orders.total_shipping_price_set__presentment_money__currency_code,
+    orders.total_tax,
+    orders.total_tax_set__shop_money__amount,
+    orders.total_tax_set__shop_money__currency_code,
+    orders.total_tax_set__presentment_money__amount,
+    orders.total_tax_set__presentment_money__currency_code,
+    orders.total_tip_received,
+    orders.total_weight,
+    orders.updated_at,
+    orders.user_id,
+    orders.billing_address__first_name,
+    orders.billing_address__address1,
+    orders.billing_address__city,
+    orders.billing_address__zip,
+    orders.billing_address__province,
+    orders.billing_address__country,
+    orders.billing_address__last_name,
+    orders.billing_address__address2,
+    orders.billing_address__latitude,
+    orders.billing_address__longitude,
+    orders.billing_address__name,
+    orders.billing_address__country_code,
+    orders.billing_address__province_code,
+
+    
+
+FROM  `dlt-dev-external`.`shopify_data_tst2_transformed`.`stg_orders` as orders
+    );
+  
+[0m08:12:13.392599 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlt-dev-external&j=bq:US:7d828631-b703-4e4a-8693-48f11664acb3&page=queryresults
+[0m08:12:13.938865 [info ] [Thread-2 (]: 8 of 40 OK created sql incremental model shopify_data_tst2_transformed.dim_customers  [[32mCREATE TABLE (3.0 rows, 996.0 Bytes processed)[0m in 3.08s]
+[0m08:12:13.939739 [debug] [Thread-2 (]: Finished running node model.shopify_tst1.dim_customers
+[0m08:12:14.065959 [info ] [Thread-4 (]: 6 of 40 OK created sql table model shopify_data_tst2_transformed.stg_products .. [[32mCREATE TABLE (17.0 rows, 10.2 KiB processed)[0m in 3.46s]
+[0m08:12:14.066951 [debug] [Thread-4 (]: Finished running node model.shopify_tst1.stg_products
+[0m08:12:14.171432 [info ] [Thread-3 (]: 7 of 40 OK created sql incremental model shopify_data_tst2_transformed.dim__dlt_loads  [[32mCREATE TABLE (1.0 rows, 91.0 Bytes processed)[0m in 3.36s]
+[0m08:12:14.172210 [debug] [Thread-3 (]: Finished running node model.shopify_tst1.dim__dlt_loads
+[0m08:12:15.852373 [info ] [Thread-1 (]: 10 of 40 OK created sql incremental model shopify_data_tst2_transformed.fact_orders  [[32mCREATE TABLE (2.0 rows, 2.0 KiB processed)[0m in 3.31s]
+[0m08:12:15.853295 [debug] [Thread-1 (]: Finished running node model.shopify_tst1.fact_orders
+[0m08:12:15.854017 [info ] [MainThread]: 
+[0m08:12:15.854625 [error] [MainThread]:   Database Error in model stg_customers__addresses (models/staging/stg_customers__addresses.sql)
+  Syntax error: Expected ")" but got keyword DEFAULT at [34:5]
+  compiled code at target/run/shopify_tst1/models/staging/stg_customers__addresses.sql
+[0m08:12:15.855521 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:12:15.856019 [debug] [MainThread]: Connection 'model.shopify_tst1.fact_orders' was properly closed.
+[0m08:12:15.856490 [debug] [MainThread]: Connection 'model.shopify_tst1.dim__dlt_loads' was properly closed.
+[0m08:12:15.856976 [debug] [MainThread]: Connection 'model.shopify_tst1.stg_products' was properly closed.
+[0m08:12:15.857424 [debug] [MainThread]: Connection 'model.shopify_tst1.dim_customers' was properly closed.
+[0m08:12:15.858052 [info ] [MainThread]: 
+[0m08:12:15.858533 [info ] [MainThread]: Finished running 20 table models, 20 incremental models in 0 hours 0 minutes and 19.30 seconds (19.30s).
+[0m08:12:15.861110 [debug] [MainThread]: Command end result
+[0m08:12:15.914885 [info ] [MainThread]: 
+[0m08:12:15.915455 [info ] [MainThread]: [31mCompleted with 35 errors and 0 warnings:[0m
+[0m08:12:15.915956 [info ] [MainThread]: 
+[0m08:12:15.916527 [error] [MainThread]:   Database Error in model stg_customers__addresses (models/staging/stg_customers__addresses.sql)
+  Syntax error: Expected ")" but got keyword DEFAULT at [34:5]
+  compiled code at target/run/shopify_tst1/models/staging/stg_customers__addresses.sql
+[0m08:12:15.917166 [info ] [MainThread]: 
+[0m08:12:15.917950 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.918600 [info ] [MainThread]: 
+[0m08:12:15.919200 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.919755 [info ] [MainThread]: 
+[0m08:12:15.920333 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.920915 [info ] [MainThread]: 
+[0m08:12:15.921468 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.922102 [info ] [MainThread]: 
+[0m08:12:15.922705 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.923351 [info ] [MainThread]: 
+[0m08:12:15.924184 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.924753 [info ] [MainThread]: 
+[0m08:12:15.925342 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.925922 [info ] [MainThread]: 
+[0m08:12:15.926479 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.927055 [info ] [MainThread]: 
+[0m08:12:15.927607 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.928261 [info ] [MainThread]: 
+[0m08:12:15.929092 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.930063 [info ] [MainThread]: 
+[0m08:12:15.930677 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.931507 [info ] [MainThread]: 
+[0m08:12:15.932129 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.932713 [info ] [MainThread]: 
+[0m08:12:15.933295 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.933945 [info ] [MainThread]: 
+[0m08:12:15.934554 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.935209 [info ] [MainThread]: 
+[0m08:12:15.935987 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.936572 [info ] [MainThread]: 
+[0m08:12:15.937154 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.937710 [info ] [MainThread]: 
+[0m08:12:15.938288 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.938862 [info ] [MainThread]: 
+[0m08:12:15.939407 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.940056 [info ] [MainThread]: 
+[0m08:12:15.940624 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.941232 [info ] [MainThread]: 
+[0m08:12:15.941950 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.942521 [info ] [MainThread]: 
+[0m08:12:15.943104 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.943658 [info ] [MainThread]: 
+[0m08:12:15.944229 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.944778 [info ] [MainThread]: 
+[0m08:12:15.945351 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.945927 [info ] [MainThread]: 
+[0m08:12:15.946479 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.947135 [info ] [MainThread]: 
+[0m08:12:15.947688 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.948335 [info ] [MainThread]: 
+[0m08:12:15.949066 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.949636 [info ] [MainThread]: 
+[0m08:12:15.950253 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.950975 [info ] [MainThread]: 
+[0m08:12:15.951990 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.952721 [info ] [MainThread]: 
+[0m08:12:15.953566 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.954341 [info ] [MainThread]: 
+[0m08:12:15.955164 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.955966 [info ] [MainThread]: 
+[0m08:12:15.956803 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.957583 [info ] [MainThread]: 
+[0m08:12:15.958381 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.959174 [info ] [MainThread]: 
+[0m08:12:15.959968 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.960732 [info ] [MainThread]: 
+[0m08:12:15.961598 [error] [MainThread]:   Skipping due to fail_fast
+[0m08:12:15.962465 [info ] [MainThread]: 
+[0m08:12:15.963248 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=34 TOTAL=40
+[0m08:12:15.966753 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 20.552631, "process_user_time": 3.843446, "process_kernel_time": 0.356464, "process_mem_max_rss": "247752", "process_out_blocks": "4160", "command_success": false, "process_in_blocks": "0"}
+[0m08:12:15.967779 [debug] [MainThread]: Command `cli run` failed at 08:12:15.967618 after 20.55 seconds
+[0m08:12:15.970749 [debug] [MainThread]: Flushing usage events
